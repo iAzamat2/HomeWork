@@ -44,10 +44,10 @@ void Zadacha15()
     // Добавляет 0, если число меньше 10
     string format(int text)
     {
-        string result=Convert.ToString(text);
-        if ((text>0)&&(text<10))
+        string result = Convert.ToString(text);
+        if ((text > 0) && (text < 10))
         {
-           result=0+result;
+            result = 0 + result;
         }
         return result;
     }
@@ -83,35 +83,35 @@ void Zadacha15()
 
     void WeekString(int code)
     {
-    switch (code)
-    {
-        case 1:
-            Console.Write("понедельник (рабочий день)");
-            break;
-        case 2:
-            Console.Write("вторник (рабочий день)");
-            break;
-        case 3:
-            Console.Write("среда (рабочий день)");
-            break;
-        case 4:
-            Console.Write("четверг (рабочий день)");
-            break;
-        case 5:
-            Console.Write("пятница (рабочий день)");
-            break;
-        case 6:
-            Console.Write("суббота (выходной день)");
-            break;
-        case 0:
-            Console.Write("воскресенье (выходной день)");
-            break;
+        switch (code)
+        {
+            case 1:
+                Console.Write("понедельник (рабочий день)");
+                break;
+            case 2:
+                Console.Write("вторник (рабочий день)");
+                break;
+            case 3:
+                Console.Write("среда (рабочий день)");
+                break;
+            case 4:
+                Console.Write("четверг (рабочий день)");
+                break;
+            case 5:
+                Console.Write("пятница (рабочий день)");
+                break;
+            case 6:
+                Console.Write("суббота (выходной день)");
+                break;
+            case 0:
+                Console.Write("воскресенье (выходной день)");
+                break;
 
-        default:
-            Console.Write("Ошибка!");
-            break;
+            default:
+                Console.Write("Ошибка!");
+                break;
+        }
     }
-}
 
 }
 
