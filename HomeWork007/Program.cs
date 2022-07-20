@@ -145,7 +145,7 @@ void Task21()
 
     void Distance(int[,] array)
     {
-        double res = Math.Sqrt(Math.Pow((coords[1, 0] - coords[0, 0]), 2) + Math.Pow((coords[1, 1] - coords[0, 1]), 2) + Math.Pow((coords[1, 2] - coords[0, 2]), 2));
+        double res = Math.Sqrt(Math.Pow((array[1, 0] - array[0, 0]), 2) + Math.Pow((array[1, 1] - array[0, 1]), 2) + Math.Pow((array[1, 2] - array[0, 2]), 2));
         double result = Math.Round(res, 5);
         Console.WriteLine($"Расстояние между точками {result}");
 
@@ -186,5 +186,5 @@ void Task23()
 
 
 //Task19();
-//Task21();
+Task21();
 //Task23();
